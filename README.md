@@ -6,7 +6,7 @@
 
 Use the GitHub template to create a new project:
 
-[https://github.com/ttrpgtools/starter/generate](https://github.com/ttrpgtools/starter/generate)
+[New Repository](https://github.com/new?template_name=starter&template_owner=ttrpgtools)
 
 ## Developing
 
