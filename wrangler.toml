@@ -1,0 +1,27 @@
+name = "ttrpg-starter"
+compatibility_date = "2025-04-19"
+compatibility_flags = ["nodejs_compat"]
+main = ".svelte-kit/cloudflare/_worker.js"
+
+[assets]
+binding = "ASSETS"
+directory = ".svelte-kit/cloudflare"
+
+[observability]
+enabled = true
+
+[vars]
+KINDE_ISSUER_URL = "https://ttrpgtools.kinde.com"
+KINDE_REDIRECT_URL = "https://starter.ttrpg.tools/api/auth/kinde_callback"
+KINDE_POST_LOGOUT_REDIRECT_URL = "https://starter.ttrpg.tools/"
+KINDE_POST_LOGIN_REDIRECT_URL = "https://starter.ttrpg.tools/"
+KINDE_SCOPE = "profile email offline openid"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ttrpg-enclave-db"
+database_id = "ec9b0df5-7dc4-4935-9c1d-e486ec9b3811"
+
+[[routes]]
+pattern = "starter.ttrpg.tools"
+custom_domain = true
